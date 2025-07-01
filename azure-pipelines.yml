@@ -9,8 +9,7 @@ stages:
 - stage: 'Build'
   displayName: 'Build the web application'
   pool:
-      name: SecureAgentsSoyon
-      vmImage: 'ubuntu-22.04'
+      name: SecureAgents
   jobs: 
   - job: 'Build'
     displayName: 'Build job'
