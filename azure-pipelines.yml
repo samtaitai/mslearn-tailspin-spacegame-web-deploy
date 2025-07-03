@@ -92,7 +92,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: dev website'
             inputs:
-              azureSubscription: 'PRO690'
+              azureSubscription: 'PRO690-New'
               appType: 'webAppLinux'
               appName: '$(WebAppNameDev)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
@@ -117,7 +117,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: staging website'
             inputs:
-              azureSubscription: 'PRO690'
+              azureSubscription: 'PRO690-New'
               appType: 'webAppLinux'
               appName: '$(WebAppNameStaging)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
